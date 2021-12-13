@@ -1,0 +1,21 @@
+import mainLogo from "./images/logo.png";
+import sliderImage from "./images/slider_image.png";
+import magicCard1 from "./images/magic_card_1.png";
+import magicCard2 from "./images/magic_card_2.png";
+import magicCard3 from "./images/magic_card_3.png";
+import magicCard4 from "./images/magic_card_4.png";
+import magicCard5 from "./images/magic_card_5.png";
+import homeLaptop from "./images/home_laptop.png";
+import robotImage1 from "./images/robot_1.jpeg";
+import robotImage2 from "./images/robot_2.jpeg";
+
+export const MainLogo = mainLogo;
+export const SliderImage = sliderImage;
+export const MagicCard1 = magicCard1;
+export const MagicCard2 = magicCard2;
+export const MagicCard3 = magicCard3;
+export const MagicCard4 = magicCard4;
+export const MagicCard5 = magicCard5;
+export const HomeLaptop = homeLaptop;
+export const RobotImage1 = robotImage1;
+export const RobotImage2 = robotImage2;

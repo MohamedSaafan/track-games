@@ -1,13 +1,48 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --praimarycolor: #f18f0f;
+  --secondColor: #002147;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  transition: all ease-out 0.2s;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.praimaryText-hover:hover {
+  color: var(--praimarycolor) !important;
+}
+
+.font-xss {
+  font-size: 11px;
+}
+
+.font-sm {
+  font-size: 16px;
+}
+
+.font-md {
+  font-size: 16px;
+}
+
+.font-lg {
+  font-size: 26px;
+}
+
+.navbar-buttons > a {
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-buttons > a {
+    margin: 0.4rem 0;
+  }
+}
+
+.hero-icon {
+  width: 129px;
+  height: 142px;
 }
