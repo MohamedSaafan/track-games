@@ -8,6 +8,10 @@ import magicCard5 from "./images/magic_card_5.png";
 import homeLaptop from "./images/home_laptop.png";
 import robotImage1 from "./images/robot_1.jpeg";
 import robotImage2 from "./images/robot_2.jpeg";
+import lego1 from "./images/lego_1.jpeg";
+import lego2 from "./images/lego_2.jpeg";
+import lego3 from "./images/lego_3.jpeg";
+import lego4 from "./images/lego_4.jpeg";
 
 export const MainLogo = mainLogo;
 export const SliderImage = sliderImage;
@@ -19,3 +23,7 @@ export const MagicCard5 = magicCard5;
 export const HomeLaptop = homeLaptop;
 export const RobotImage1 = robotImage1;
 export const RobotImage2 = robotImage2;
+export const Lego1 = lego1;
+export const Lego2 = lego2;
+export const Lego3 = lego3;
+export const Lego4 = lego4;
