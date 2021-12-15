@@ -1,4 +1,4 @@
-import { Carousel, Container, Col, Row, Card } from "react-bootstrap";
+import { Carousel, Container, Col, Row, Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { IoLogoDiscord } from "react-icons/io5";
 import {
@@ -10,7 +10,16 @@ import {
   MagicCard5,
   MainLogo,
   RobotImage1,
+  RobotImage2,
+  RobotImage3,
   SliderImage,
+  GameBanner1,
+  GameBanner2,
+  GameBanner3,
+  GameBanner4,
+  GameBanner5,
+  NewsBanner2,
+  NewsBanner1,
 } from "../../assets";
 
 const Home = () => {
@@ -144,7 +153,33 @@ const Home = () => {
             <Col>
               <Card>
                 <Card.Img variant="top" src={RobotImage1} />
-                <Card.Body>
+                <Card.Body className="bg-secondary text-white">
+                  <Card.Title>Human Exemplar: The Pit Fighters</Card.Title>
+                  <Card.Text className="font-xss">
+                    <img src={MainLogo} className="mr-2" width={15} height={20} />
+                    6,104
+                  </Card.Text>
+                  <Card.Text className="font-xss">Mirandus</Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col>
+              <Card className="rounded">
+                <Card.Img variant="top" src={RobotImage2} />
+                <Card.Body className="bg-secondary text-white">
+                  <Card.Title>Human Exemplar: The Pit Fighters</Card.Title>
+                  <Card.Text className="font-xss">
+                    <img src={MainLogo} className="mr-2" width={15} height={20} />
+                    6,104
+                  </Card.Text>
+                  <Card.Text className="font-xss">Mirandus</Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col>
+              <Card>
+                <Card.Img variant="top" src={RobotImage3} />
+                <Card.Body className="bg-secondary text-white">
                   <Card.Title>Human Exemplar: The Pit Fighters</Card.Title>
                   <Card.Text className="font-xss">
                     <img src={MainLogo} className="mr-2" width={15} height={20} />
@@ -157,7 +192,7 @@ const Home = () => {
             <Col>
               <Card>
                 <Card.Img variant="top" src={RobotImage1} />
-                <Card.Body>
+                <Card.Body className="bg-secondary text-white">
                   <Card.Title>Human Exemplar: The Pit Fighters</Card.Title>
                   <Card.Text className="font-xss">
                     <img src={MainLogo} className="mr-2" width={15} height={20} />
@@ -167,29 +202,95 @@ const Home = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col>
+          </Row>
+        </section>
+
+        <section className="my-4">
+          <div className="mb-4 pb-2 d-flex justify-content-between align-items-center border-bottom">
+            <h2 className="text-capitalize font-lg text-secondary">games</h2>
+            <Link to="/" className="text-pramiry text-uppercase font-lg">
+              view all
+            </Link>
+          </div>
+          <Row>
+            <Col className="p-4">
+              <Link to="/games">
+                <img src={GameBanner1} width={215} height={122} className="rounded mx-auto d-block" />
+              </Link>
+            </Col>
+            <Col className="p-4">
+              <Link to="/games">
+                <img src={GameBanner2} width={215} height={122} className="rounded mx-auto d-block" />
+              </Link>
+            </Col>
+            <Col className="p-4">
+              <Link to="/games">
+                <img src={GameBanner3} width={215} height={122} className="rounded mx-auto d-block" />
+              </Link>
+            </Col>
+            <Col className="p-4">
+              <Link to="/games">
+                <img src={GameBanner4} width={215} height={122} className="rounded mx-auto d-block" />
+              </Link>
+            </Col>
+            <Col className="p-4">
+              <Link to="/games">
+                <img src={GameBanner5} width={215} height={122} className="rounded mx-auto d-block" />
+              </Link>
+            </Col>
+          </Row>
+        </section>
+
+        <section className="my-4">
+          <div className="mb-4 pb-2 d-flex justify-content-between align-items-center border-bottom">
+            <h2 className="text-capitalize font-lg text-secondary">news</h2>
+            <Link to="/" className="text-pramiry text-uppercase font-lg">
+              view all
+            </Link>
+          </div>
+          <Row>
+            <Col className="p-4" md={4}>
               <Card>
-                <Card.Img variant="top" src={RobotImage1} />
+                <Card.Img variant="top" src={NewsBanner1} />
                 <Card.Body>
-                  <Card.Title>Human Exemplar: The Pit Fighters</Card.Title>
-                  <Card.Text className="font-xss">
-                    <img src={MainLogo} className="mr-2" width={15} height={20} />
-                    6,104
+                  <Card.Title>Founder's Node Proposal - Two New Gaming Titles</Card.Title>
+                  <Card.Text className="my-4">
+                    Founder’s Node Proposal — Two New Gaming Titles Well, this is a little awkward. We’re preparing to
+                    reveal and open presale for two incredibly...
                   </Card.Text>
-                  <Card.Text className="font-xss">Mirandus</Card.Text>
+                  <Link className="btn btn-primary text-white text-center d-block mx-auto" to="/blog">
+                    Read more...
+                  </Link>
                 </Card.Body>
               </Card>
             </Col>
-            <Col>
+            <Col className="p-4" md={4}>
               <Card>
-                <Card.Img variant="top" src={RobotImage1} />
+                <Card.Img variant="top" src={NewsBanner2} />
                 <Card.Body>
-                  <Card.Title>Human Exemplar: The Pit Fighters</Card.Title>
-                  <Card.Text className="font-xss">
-                    <img src={MainLogo} className="mr-2" width={15} height={20} />
-                    6,104
+                  <Card.Title>Founder's Node Proposal - Two New Gaming Titles</Card.Title>
+                  <Card.Text>
+                    Founder’s Node Proposal — Two New Gaming Titles Well, this is a little awkward. We’re preparing to
+                    reveal and open presale for two incredibly...
                   </Card.Text>
-                  <Card.Text className="font-xss">Mirandus</Card.Text>
+                  <Link className="btn btn-primary text-white text-center d-block mx-auto" to="/blog">
+                    Read more...
+                  </Link>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col className="p-4" md={4}>
+              <Card>
+                <Card.Img variant="top" src={NewsBanner1} />
+                <Card.Body>
+                  <Card.Title>Founder's Node Proposal - Two New Gaming Titles</Card.Title>
+                  <Card.Text>
+                    Founder’s Node Proposal — Two New Gaming Titles Well, this is a little awkward. We’re preparing to
+                    reveal and open presale for two incredibly...
+                  </Card.Text>
+                  <Link className="btn btn-primary text-white text-center d-block mx-auto" to="/blog">
+                    Read more...
+                  </Link>
                 </Card.Body>
               </Card>
             </Col>
