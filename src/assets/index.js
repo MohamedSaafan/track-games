@@ -20,6 +20,8 @@ import gameBanner4 from "./images/game_banner_4.png";
 import gameBanner5 from "./images/game_banner_5.png";
 import newsBanner1 from "./images/news_banner_1.png";
 import newsBanner2 from "./images/news_banner_2.png";
+import sideBarImage1 from "./images/sidebar_game_img_1.png";
+import sideBarImage2 from "./images/sidebar_game_img_2.png";
 
 export const MainLogo = mainLogo;
 export const SliderImage = sliderImage;
@@ -43,3 +45,5 @@ export const GameBanner4 = gameBanner4;
 export const GameBanner5 = gameBanner5;
 export const NewsBanner1 = newsBanner1;
 export const NewsBanner2 = newsBanner2;
+export const SideBarImage1 = sideBarImage1;
+export const SideBarImage2 = sideBarImage2;
