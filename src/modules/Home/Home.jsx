@@ -1,4 +1,4 @@
-import { Carousel, Container, Col, Row, Card, Button } from "react-bootstrap";
+import { Carousel, Container, Col, Row, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { IoLogoDiscord } from "react-icons/io5";
 import {
@@ -8,7 +8,6 @@ import {
   MagicCard3,
   MagicCard4,
   MagicCard5,
-  MainLogo,
   RobotImage1,
   RobotImage2,
   RobotImage3,
@@ -21,6 +20,7 @@ import {
   NewsBanner2,
   NewsBanner1,
 } from "../../assets";
+import GameCard from "./GameCard";
 
 const Home = () => {
   return (
@@ -86,7 +86,7 @@ const Home = () => {
         <section className="bg-secondary my-4 rounded align-items-center justify-content-center py-4 px-5">
           <Row>
             <Col className="text-right" md={3} sm={2}>
-              <img src={HomeLaptop} />
+              <img src={HomeLaptop} alt="track node" />
             </Col>
             <Col md={9}>
               <h2 className="text-uppercase text-primary font-lg">get a track node</h2>
@@ -116,27 +116,27 @@ const Home = () => {
           <Row>
             <Col>
               <div className="my-4">
-                <img src={MagicCard1} className="d-block" />
+                <img src={MagicCard1} className="d-block" alt="magic card" />
               </div>
             </Col>
             <Col>
               <div className="my-4">
-                <img src={MagicCard2} className="d-block" />
+                <img src={MagicCard2} className="d-block" alt="magic card" />
               </div>
             </Col>
             <Col>
               <div className="my-4">
-                <img src={MagicCard3} className="d-block" />
+                <img src={MagicCard3} className="d-block" alt="magic card" />
               </div>
             </Col>
             <Col>
               <div className="my-4">
-                <img src={MagicCard4} className="d-block" />
+                <img src={MagicCard4} className="d-block" alt="magic card" />
               </div>
             </Col>
             <Col>
               <div className="my-4">
-                <img src={MagicCard5} className="d-block" />
+                <img src={MagicCard5} className="d-block" alt="magic card" />
               </div>
             </Col>
           </Row>
@@ -151,56 +151,16 @@ const Home = () => {
           </div>
           <Row>
             <Col>
-              <Card>
-                <Card.Img variant="top" src={RobotImage1} />
-                <Card.Body className="bg-secondary text-white">
-                  <Card.Title>Human Exemplar: The Pit Fighters</Card.Title>
-                  <Card.Text className="font-xss">
-                    <img src={MainLogo} className="mr-2" width={15} height={20} />
-                    6,104
-                  </Card.Text>
-                  <Card.Text className="font-xss">Mirandus</Card.Text>
-                </Card.Body>
-              </Card>
+              <GameCard cardImage={RobotImage1} cardTitle="Human Exemplar: The Pit Fighters" points={6104} />
             </Col>
             <Col>
-              <Card className="rounded">
-                <Card.Img variant="top" src={RobotImage2} />
-                <Card.Body className="bg-secondary text-white">
-                  <Card.Title>Human Exemplar: The Pit Fighters</Card.Title>
-                  <Card.Text className="font-xss">
-                    <img src={MainLogo} className="mr-2" width={15} height={20} />
-                    6,104
-                  </Card.Text>
-                  <Card.Text className="font-xss">Mirandus</Card.Text>
-                </Card.Body>
-              </Card>
+              <GameCard cardImage={RobotImage2} cardTitle="Human Exemplar: The Pit Fighters" points={6104} />
             </Col>
             <Col>
-              <Card>
-                <Card.Img variant="top" src={RobotImage3} />
-                <Card.Body className="bg-secondary text-white">
-                  <Card.Title>Human Exemplar: The Pit Fighters</Card.Title>
-                  <Card.Text className="font-xss">
-                    <img src={MainLogo} className="mr-2" width={15} height={20} />
-                    6,104
-                  </Card.Text>
-                  <Card.Text className="font-xss">Mirandus</Card.Text>
-                </Card.Body>
-              </Card>
+              <GameCard cardImage={RobotImage3} cardTitle="Human Exemplar: The Pit Fighters" points={6104} />
             </Col>
             <Col>
-              <Card>
-                <Card.Img variant="top" src={RobotImage1} />
-                <Card.Body className="bg-secondary text-white">
-                  <Card.Title>Human Exemplar: The Pit Fighters</Card.Title>
-                  <Card.Text className="font-xss">
-                    <img src={MainLogo} className="mr-2" width={15} height={20} />
-                    6,104
-                  </Card.Text>
-                  <Card.Text className="font-xss">Mirandus</Card.Text>
-                </Card.Body>
-              </Card>
+              <GameCard cardImage={RobotImage1} cardTitle="Human Exemplar: The Pit Fighters" points={6104} />
             </Col>
           </Row>
         </section>
@@ -215,27 +175,27 @@ const Home = () => {
           <Row>
             <Col className="p-4">
               <Link to="/games">
-                <img src={GameBanner1} width={215} height={122} className="rounded mx-auto d-block" />
+                <img src={GameBanner1} width={215} height={122} className="rounded mx-auto d-block" alt="game" />
               </Link>
             </Col>
             <Col className="p-4">
               <Link to="/games">
-                <img src={GameBanner2} width={215} height={122} className="rounded mx-auto d-block" />
+                <img src={GameBanner2} width={215} height={122} className="rounded mx-auto d-block" alt="game" />
               </Link>
             </Col>
             <Col className="p-4">
               <Link to="/games">
-                <img src={GameBanner3} width={215} height={122} className="rounded mx-auto d-block" />
+                <img src={GameBanner3} width={215} height={122} className="rounded mx-auto d-block" alt="game" />
               </Link>
             </Col>
             <Col className="p-4">
               <Link to="/games">
-                <img src={GameBanner4} width={215} height={122} className="rounded mx-auto d-block" />
+                <img src={GameBanner4} width={215} height={122} className="rounded mx-auto d-block" alt="game" />
               </Link>
             </Col>
             <Col className="p-4">
               <Link to="/games">
-                <img src={GameBanner5} width={215} height={122} className="rounded mx-auto d-block" />
+                <img src={GameBanner5} width={215} height={122} className="rounded mx-auto d-block" alt="game" />
               </Link>
             </Col>
           </Row>
