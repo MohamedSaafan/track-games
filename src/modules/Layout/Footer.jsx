@@ -8,7 +8,7 @@ import { RiHandCoinLine } from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary text-white text-lg-start footer">
+    <footer className="bg-secondary text-white text-lg-start footer mt-4">
       <Container className="p-4">
         <div className="mb-4">
           <img src={MainLogo} width={43} height={58} className="d-inline-block me-2" alt="Track Game" />
