@@ -4,6 +4,7 @@ import HeaderNavbar from "./modules/Layout/HeaderNavbar";
 import Footer from "./modules/Layout/Footer";
 import Careers from "./modules/Home/Careers";
 import GamesList from "./modules/Home/GamesList";
+import Nodes from "./modules/Home/Nodes";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/store" element={<GamesList />} />
+          <Route path="/nodes" element={<Nodes />} />
         </Routes>
         <Footer />
       </BrowserRouter>
