@@ -16,6 +16,10 @@ a {
   color: var(--praimarycolor) !important;
 }
 
+.large-button {
+  padding: 0.5rem 1rem;
+}
+
 .font-xss {
   font-size: 11px;
 }
@@ -46,3 +50,58 @@ a {
   width: 129px;
   height: 142px;
 }
+
+.games-hero {
+  background: url("./assets/images/games_background.png");
+  display: flex;
+  align-items: center;
+  height: 400px;
+}
+
+.search-button-icon {
+  position: absolute;
+  z-index: 1000;
+  right: 0;
+  padding: 0 15px;
+  height: 100%;
+  background: white;
+  border-left: 0;
+}
+
+.search-button-icon > svg {
+  font-size: 1.1rem;
+}
+
+/* Start Footer */
+.footer {
+  margin-top: auto;
+}
+.footer-icon:hover {
+  transform: scale(1.2);
+}
+
+.footer-icon {
+  width: 50px;
+  height: 50px;
+  background: var(--praimarycolor);
+  padding: 10px;
+  border-radius: 10px;
+}
+/* End Footer */
+
+/*Start Career Page*/
+@media screen and (max-width: 350px) {
+  .lego-image {
+    width: auto;
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .second-lego-image {
+    top: -80px;
+    position: absolute;
+  }
+}
+
+/*End Career Page*/
