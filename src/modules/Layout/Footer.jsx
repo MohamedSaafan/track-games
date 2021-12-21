@@ -1,22 +1,29 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { MainLogo } from "../../assets";
+import { FaFacebookF, FaYoutube, FaDiscord } from "react-icons/fa";
+import { BsTwitter } from "react-icons/bs";
+import { BiHelpCircle, BiInfoCircle } from "react-icons/bi";
+import { RiHandCoinLine } from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary text-white text-center text-lg-start">
+    <footer className="bg-secondary text-white text-lg-start footer">
       <Container className="p-4">
         <div className="mb-4">
-          <img src={MainLogo} width={43} height={58} className="d-inline-block mr-2" alt="Track Game" />
+          <img src={MainLogo} width={43} height={58} className="d-inline-block me-2" alt="Track Game" />
           <p className="text-uppercase d-inline-block">track</p>
         </div>
         <Row>
-          <Col className="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 className="text-uppercase">help</h5>
+          <Col>
+            <h5 className="text-uppercase d-flex align-items-center mb-4">
+              <BiHelpCircle className="me-1" />
+              help
+            </h5>
 
             <ul className="list-unstyled mb-0">
               <li>
-                <Link to="#!" className="text-white">
+                <Link to="/faq" className="text-white">
                   FAQs
                 </Link>
               </li>
@@ -28,17 +35,19 @@ const Footer = () => {
             </ul>
           </Col>
 
-          <Col className="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 className="text-uppercase">About</h5>
+          <Col>
+            <h5 className="text-uppercase d-flex align-items-center mb-4">
+              <BiInfoCircle className="me-1" /> About
+            </h5>
 
             <ul className="list-unstyled">
               <li>
-                <Link to="#!" className="text-white">
+                <Link to="/about" className="text-white">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="#!" className="text-white">
+                <Link to="/careers" className="text-white">
                   Careers
                 </Link>
               </li>
@@ -55,8 +64,11 @@ const Footer = () => {
             </ul>
           </Col>
 
-          <Col className="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 className="text-uppercase">track COIN</h5>
+          <Col>
+            <h5 className="text-uppercase text-uppercase d-flex align-items-center mb-4">
+              <RiHandCoinLine className="me-1" />
+              track COIN
+            </h5>
 
             <ul className="list-unstyled">
               <li>
@@ -71,12 +83,39 @@ const Footer = () => {
               </li>
             </ul>
           </Col>
+
+          <Col>
+            <h5 className="text-uppercase">join our community</h5>
+
+            <ul className="list-unstyled d-flex gap-2 mt-3">
+              <li>
+                <a href="https://www.facebokc.com" target="_blank" className="text-white">
+                  <BsTwitter className="footer-icon" />
+                </a>
+              </li>
+              <li>
+                <a href="www.facebokc.com" target="_blank" className="text-white">
+                  <FaFacebookF className="footer-icon" />
+                </a>
+              </li>
+              <li>
+                <a href="www.facebokc.com" target="_blank" className="text-white">
+                  <FaYoutube className="footer-icon" />
+                </a>
+              </li>
+              <li>
+                <a href="www.facebokc.com" target="_blank" className="text-white">
+                  <FaDiscord className="footer-icon" />
+                </a>
+              </li>
+            </ul>
+          </Col>
         </Row>
       </Container>
 
       <div className="text-center p-3" style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}>
         © 2021
-        <Link className="text-white" to="https://mdbootstrap.com/">
+        <Link className="text-white ms-2" to="https://mdbootstrap.com/">
           Gala Games • Terms and Conditions • Privacy Policy • Launcher EULA
         </Link>
       </div>
