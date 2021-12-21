@@ -89,7 +89,7 @@ const Footer = () => {
 
             <ul className="list-unstyled d-flex gap-2 mt-3">
               <li>
-                <a href="https://www.facebokc.com" target="_blank" className="text-white">
+                <a href="https://www.facebokc.com" target="_blank" rel="noreferrer" className="text-white">
                   <BsTwitter className="footer-icon" />
                 </a>
               </li>

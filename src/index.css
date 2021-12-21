@@ -29,7 +29,11 @@ a {
 }
 
 .font-md {
-  font-size: 16px;
+  font-size: 18px;
+}
+
+.font-smiMd {
+  font-size: 20px;
 }
 
 .font-lg {
@@ -105,3 +109,27 @@ a {
 }
 
 /*End Career Page*/
+
+/*Start Nodes Page */
+
+.nodes-section {
+  background-image: url("./assets/images/bg_image_1.png");
+  background-repeat: no-repeat;
+  padding: 2rem 4rem;
+  background-position: -47px -46px;
+  min-height: 39vh;
+  align-items: center;
+}
+
+.founder-node-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feature-image {
+  background: rgb(255 255 255 / 38%);
+}
+
+/*End Nodes Page*/
