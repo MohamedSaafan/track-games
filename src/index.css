@@ -44,6 +44,14 @@ a {
   margin-right: 1rem;
 }
 
+.carousel-indicators [data-bs-target] {
+  width: 13px;
+  height: 13px;
+  margin-right: 8px;
+  margin-left: 4px;
+  border-radius: 50%;
+}
+
 @media screen and (max-width: 767px) {
   .navbar-buttons > a {
     margin: 0.4rem 0;
@@ -133,3 +141,16 @@ a {
 }
 
 /*End Nodes Page*/
+
+/*Start About Page*/
+
+.about-section-img {
+  background-image: url("./assets/images/about_background.png");
+  color: #fff;
+  min-height: 40vh;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 2rem 4rem;
+}
+
+/*End About Page*/

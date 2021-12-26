@@ -1,4 +1,4 @@
-import { Carousel, Container, Col, Row, Card } from "react-bootstrap";
+import { Carousel, Container, Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { IoLogoDiscord } from "react-icons/io5";
 import {
@@ -12,15 +12,10 @@ import {
   RobotImage2,
   RobotImage3,
   SliderImage,
-  GameBanner1,
-  GameBanner2,
-  GameBanner3,
-  GameBanner4,
-  GameBanner5,
-  NewsBanner2,
-  NewsBanner1,
 } from "../../assets";
-import GameCard from "./GameCard";
+import GameCard from "../Store/GameCard";
+import NewsSection from "./NewsSection";
+import MiniGamesSection from "./MiniGamesSection";
 
 const Home = () => {
   return (
@@ -69,7 +64,7 @@ const Home = () => {
               <h2 className="text-uppercase text-primary font-lg">join our community</h2>
               <div className="row mt-4">
                 <p className="text-white col-md-6 font-sm mr-3">
-                  Receive rewards like GALA, limited edition NFTs and help the Gala Games ecosystem grow.
+                  Receive rewards like Track, limited edition NFTs and help the Track Games ecosystem grow.
                 </p>
                 <a
                   className=" col-md-6 align-self-center btn btn-primary font-sm btn-lg text-capitalize mx-auto text-white px-5"
@@ -92,7 +87,7 @@ const Home = () => {
               <h2 className="text-uppercase text-primary font-lg">get a track node</h2>
               <div className="row mt-4">
                 <p className="text-white col-md-6 font-sm mr-3">
-                  Receive rewards like GALA, limited edition NFTs and help the Gala Games ecosystem grow.
+                  Receive rewards like Track, limited edition NFTs and help the Track Games ecosystem grow.
                 </p>
                 <a
                   className=" col-md-6 align-self-center btn btn-primary font-sm btn-lg text-capitalize mx-auto text-white px-5"
@@ -165,97 +160,9 @@ const Home = () => {
           </Row>
         </section>
 
-        <section className="my-4">
-          <div className="mb-4 pb-2 d-flex justify-content-between align-items-center border-bottom">
-            <h2 className="text-capitalize font-lg text-secondary">games</h2>
-            <Link to="/" className="text-pramiry text-uppercase font-lg">
-              view all
-            </Link>
-          </div>
-          <Row>
-            <Col className="p-4">
-              <Link to="/games">
-                <img src={GameBanner1} width={215} height={122} className="rounded mx-auto d-block" alt="game" />
-              </Link>
-            </Col>
-            <Col className="p-4">
-              <Link to="/games">
-                <img src={GameBanner2} width={215} height={122} className="rounded mx-auto d-block" alt="game" />
-              </Link>
-            </Col>
-            <Col className="p-4">
-              <Link to="/games">
-                <img src={GameBanner3} width={215} height={122} className="rounded mx-auto d-block" alt="game" />
-              </Link>
-            </Col>
-            <Col className="p-4">
-              <Link to="/games">
-                <img src={GameBanner4} width={215} height={122} className="rounded mx-auto d-block" alt="game" />
-              </Link>
-            </Col>
-            <Col className="p-4">
-              <Link to="/games">
-                <img src={GameBanner5} width={215} height={122} className="rounded mx-auto d-block" alt="game" />
-              </Link>
-            </Col>
-          </Row>
-        </section>
+        <MiniGamesSection />
 
-        <section className="my-4">
-          <div className="mb-4 pb-2 d-flex justify-content-between align-items-center border-bottom">
-            <h2 className="text-capitalize font-lg text-secondary">news</h2>
-            <Link to="/" className="text-pramiry text-uppercase font-lg">
-              view all
-            </Link>
-          </div>
-          <Row>
-            <Col className="p-4" md={4}>
-              <Card>
-                <Card.Img variant="top" src={NewsBanner1} />
-                <Card.Body>
-                  <Card.Title>Founder's Node Proposal - Two New Gaming Titles</Card.Title>
-                  <Card.Text className="my-4">
-                    Founder’s Node Proposal — Two New Gaming Titles Well, this is a little awkward. We’re preparing to
-                    reveal and open presale for two incredibly...
-                  </Card.Text>
-                  <Link className="btn btn-primary text-white text-center d-block mx-auto" to="/blog">
-                    Read more...
-                  </Link>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col className="p-4" md={4}>
-              <Card>
-                <Card.Img variant="top" src={NewsBanner2} />
-                <Card.Body>
-                  <Card.Title>Founder's Node Proposal - Two New Gaming Titles</Card.Title>
-                  <Card.Text>
-                    Founder’s Node Proposal — Two New Gaming Titles Well, this is a little awkward. We’re preparing to
-                    reveal and open presale for two incredibly...
-                  </Card.Text>
-                  <Link className="btn btn-primary text-white text-center d-block mx-auto" to="/blog">
-                    Read more...
-                  </Link>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col className="p-4" md={4}>
-              <Card>
-                <Card.Img variant="top" src={NewsBanner1} />
-                <Card.Body>
-                  <Card.Title>Founder's Node Proposal - Two New Gaming Titles</Card.Title>
-                  <Card.Text>
-                    Founder’s Node Proposal — Two New Gaming Titles Well, this is a little awkward. We’re preparing to
-                    reveal and open presale for two incredibly...
-                  </Card.Text>
-                  <Link className="btn btn-primary text-white text-center d-block mx-auto" to="/blog">
-                    Read more...
-                  </Link>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </section>
+        <NewsSection />
       </Container>
     </>
   );

@@ -3,8 +3,9 @@ import Home from "./modules/Home/Home";
 import HeaderNavbar from "./modules/Layout/HeaderNavbar";
 import Footer from "./modules/Layout/Footer";
 import Careers from "./modules/Home/Careers";
-import GamesList from "./modules/Home/GamesList";
+import GamesList from "./modules/Store/GamesList";
 import Nodes from "./modules/Home/Nodes";
+import About from "./shared/components/StaticContent/AboutUs";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/careers" element={<Careers />} />
           <Route path="/store" element={<GamesList />} />
           <Route path="/nodes" element={<Nodes />} />
+          <Route path="/about" element={<About />} />
         </Routes>
         <Footer />
       </BrowserRouter>

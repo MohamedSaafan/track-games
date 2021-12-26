@@ -1,6 +1,6 @@
 import { Container, Row, Col, Carousel } from "react-bootstrap";
 import { IoIosArrowDown } from "react-icons/io";
-import { Lego1, Lego2, Lego3, Lego4, RobotImage2 } from "../../assets/index";
+import { Lego1, Lego2, Lego3, Lego4, RobotImage2, RobotImage1, RobotImage3 } from "../../assets/index";
 import { Link } from "react-router-dom";
 
 const Careers = () => {
@@ -78,7 +78,7 @@ const Careers = () => {
                     numbers of gamers, on the future of our industry itself -- then keep an eye out for roles in the
                     team.
                   </p>
-                  <button>see available postions</button>
+                  <button className="btn btn-primary text-white btn-lg">see available postions</button>
                 </Col>
                 <Col className="text-end">
                   <img src={RobotImage2} width={215} height={236} alt="dd" />
@@ -94,7 +94,7 @@ const Careers = () => {
                     numbers of gamers, on the future of our industry itself -- then keep an eye out for roles in the
                     team.
                   </p>
-                  <button>see available postions</button>
+                  <button className="btn btn-primary text-white btn-lg">see available postions</button>
                 </Col>
                 <Col className="text-end">
                   <img src={RobotImage2} width={215} height={236} alt="dd" />
@@ -110,7 +110,7 @@ const Careers = () => {
                     numbers of gamers, on the future of our industry itself -- then keep an eye out for roles in the
                     team.
                   </p>
-                  <button>see available postions</button>
+                  <button className="btn btn-primary text-white btn-lg">see available postions</button>
                 </Col>
                 <Col className="text-end">
                   <img src={RobotImage2} width={215} height={236} alt="dd" />
@@ -119,6 +119,29 @@ const Careers = () => {
             </Carousel.Item>
           </Carousel>
         </section>
+        <Row className="my-4">
+          <div className="bg-secondary text-white overflow-hidden rounded py-4">
+            <Row className="align-items-center justify-content-center text-center">
+              <Col md={3}>
+                <img src={RobotImage1} width={223} alt="VoxBlox Games" title="VoxBlox Games" />
+              </Col>
+              <Col md={6}>
+                <h2 className="text-primary">Be a player on the Track Games team</h2>
+                <p className="mb-0">
+                  There are over 2.5 billion people in the world that play games. That means there are 2.5 billion
+                  people exposed to the potential of blockchain and crypto currencies. We believe gaming can change the
+                  world of players.
+                </p>
+                <Link to="/careers" className="btn btn-primary text-white rounded text-capitalize px-4 mt-4 me-3">
+                  See all open positions
+                </Link>
+              </Col>
+              <Col md={3}>
+                <img src={RobotImage3} width={223} alt="VoxBlox Games" title="VoxBlox Games" />
+              </Col>
+            </Row>
+          </div>
+        </Row>
       </Container>
     </Container>
   );

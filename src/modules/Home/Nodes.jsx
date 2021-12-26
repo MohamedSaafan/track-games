@@ -113,7 +113,7 @@ const Nodes = () => {
         <div className="bg-secondary text-white overflow-hidden">
           <Row className="align-items-center justify-content-center text-center">
             <Col md={3}>
-              <img src={Lego5} />
+              <img src={Lego5} alt="VoxBlox Games" title="VoxBlox Games" />
             </Col>
             <Col md={6}>
               <h2 className="text-primary">VoxBlox Games</h2>
@@ -131,7 +131,7 @@ const Nodes = () => {
               </div>
             </Col>
             <Col md={3}>
-              <img src={Lego6} />
+              <img src={Lego6} alt="VoxBlox Games" title="VoxBlox Games" />
             </Col>
           </Row>
         </div>

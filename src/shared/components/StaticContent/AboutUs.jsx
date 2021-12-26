@@ -2,6 +2,7 @@ import { Container, Row, Col, Carousel } from "react-bootstrap";
 import { Lego9, RobotImage2 } from "../../../assets/index";
 import MiniGamesSection from "../../../modules/Home/MiniGamesSection";
 import NewsSection from "../../../modules/Home/NewsSection";
+import PartnersSection from "../../../modules/Home/PartnersSection";
 
 const About = () => {
   return (
@@ -66,10 +67,10 @@ const About = () => {
           </Carousel>
         </Row>
       </Container>
-      <section className="my-4 text-center">
+      <section className="my-4 text-center about-section-img">
         <Container>
-          <h2 className="font-lg">More than 16,000 player-run nodes power our ecosystem</h2>
-          <p>
+          <h2 className="font-lg mb-5">More than 16,000 player-run nodes power our ecosystem</h2>
+          <p className="mt-0 mb-auto">
             The decentralized Gala Games ecosystem aspires to blow the doors wide open and give players back the control
             they deserve. Through decentralization, players not only own their in-games items, but they have a voice in
             how the Track Games roadmap develops. Players and node owners will be enlisted, via distributed voting
@@ -81,6 +82,7 @@ const About = () => {
       <Container>
         <NewsSection />
         <MiniGamesSection />
+        <PartnersSection />
       </Container>
     </>
   );
