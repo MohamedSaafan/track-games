@@ -16,6 +16,11 @@ a {
   color: var(--praimarycolor) !important;
 }
 
+.my-6 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
 .large-button {
   padding: 0.5rem 1rem;
 }
@@ -102,10 +107,27 @@ a {
 /* End Footer */
 
 /*Start Career Page*/
+.select-game {
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.careers-bg {
+  background-image: url("./assets/images/bg_image_3.png");
+  background-repeat: repeat-x;
+  padding: 3rem 1rem;
+}
+
 @media screen and (max-width: 350px) {
   .lego-image {
     width: auto;
     padding-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .select-game {
+    justify-content: center;
   }
 }
 

@@ -1,5 +1,5 @@
 import mainLogo from "./images/logo.png";
-import sliderImage from "./images/slider_image.png";
+import sliderImage from "./images/slider_image.jpg";
 import magicCard1 from "./images/magic_card_1.png";
 import magicCard2 from "./images/magic_card_2.png";
 import magicCard3 from "./images/magic_card_3.png";
@@ -37,6 +37,7 @@ import partnerImage2 from "./images/partner_2.png";
 import partnerImage3 from "./images/partner_3.png";
 import partnerImage4 from "./images/partner_4.png";
 import partnerImage5 from "./images/partner_5.png";
+import careersImage from "./images/careers-image.png";
 
 export const MainLogo = mainLogo;
 export const SliderImage = sliderImage;
@@ -77,3 +78,4 @@ export const PartnerImage2 = partnerImage2;
 export const PartnerImage3 = partnerImage3;
 export const PartnerImage4 = partnerImage4;
 export const PartnerImage5 = partnerImage5;
+export const CareersImage = careersImage;
