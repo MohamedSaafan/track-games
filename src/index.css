@@ -63,6 +63,26 @@ a {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .slider {
+    height: 350px;
+  }
+  .carousel-inner,
+  .carousel-item {
+    height: 100%;
+  }
+  .carousel-item > img {
+    object-fit: cover;
+  }
+  .center-smText {
+    text-align: center;
+  }
+  .mx-xs-auto {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 .hero-icon {
   width: 129px;
   height: 142px;
@@ -114,8 +134,17 @@ a {
 
 .careers-bg {
   background-image: url("./assets/images/bg_image_3.png");
-  background-repeat: repeat-x;
+  background-repeat: repeat;
   padding: 3rem 1rem;
+}
+
+.our-mission-container {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.our-mission {
+  padding: 2rem;
 }
 
 @media screen and (max-width: 350px) {

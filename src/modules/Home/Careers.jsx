@@ -22,19 +22,27 @@ const Careers = () => {
         </section>
 
         <Container>
-          <section className="m-4">
-            <Row className="position-relative">
-              <Col md={3} sm={3}>
-                <img src={Lego1} alt="leg1" className="lego-image" />
-              </Col>
-              <Col md={6} sm={6} className="text-center d-flex align-items-center">
-                <h1 className="font-lg fw-light">Join the Gaming Revolution!</h1>
-              </Col>
-              <Col md={3} sm={3}>
-                <img className="lego-image second-lego-image" src={Lego3} alt="leg1" />
-              </Col>
-            </Row>
-          </section>
+          <Row className="my-4">
+            <div className="mb-4 pb-2 d-flex justify-content-between align-items-center">
+              <h3 className="text-capitalize font-smiMd text-secondary">Game Node</h3>
+              <Link to="/" className="text-primary text-uppercase font-smiMd">
+                view all
+              </Link>
+            </div>
+            <div className="overflow-hidden">
+              <Row className="align-items-center justify-content-center text-center">
+                <Col md={4}>
+                  <img src={Lego1} height={200} alt="VoxBlox Games" title="VoxBlox Games" />
+                </Col>
+                <Col md={4}>
+                  <h2 className="font-lg fw-light">Join the Gaming Revolution!</h2>
+                </Col>
+                <Col md={4}>
+                  <img src={Lego3} height={300} alt="VoxBlox Games" title="VoxBlox Games" />
+                </Col>
+              </Row>
+            </div>
+          </Row>
           <section className="m-4">
             <p className="text-center">
               From a founder of Zynga and some of the creative minds that brought us 'FarmVille' and 'Words With
@@ -42,23 +50,23 @@ const Careers = () => {
             </p>
           </section>
           <section className="mb-4">
-            <Row className="position-relative">
-              <Col>
-                <img src={Lego2} alt="leg1" width={222} height={202} className="lego-image" />
+            <Row className="align-items-center justify-content-center text-center">
+              <Col md={4}>
+                <img src={Lego2} height={200} alt="VoxBlox Games" title="VoxBlox Games" />
               </Col>
-              <Col className="text-center my-auto">
+              <Col md={4}>
                 <Link to="/" className="btn btn-primary d-block text-white large-button">
                   Work with us
                 </Link>
               </Col>
-              <Col>
-                <img className="lego-image second-lego-image" src={Lego4} alt="leg1" width={313} height={343} />
+              <Col md={4}>
+                <img src={Lego4} height={250} alt="VoxBlox Games" title="VoxBlox Games" />
               </Col>
             </Row>
           </section>
 
-          <section className="mb-4 bg-secondary rounded mx-5">
-            <div className="p-5 mb-4 bg-light rounded-3">
+          <section className="mb-4 bg-secondary rounded our-mission-container">
+            <div className="our-mission mb-4 bg-light rounded-3">
               <div className="container-fluid p-lg-5 text-center">
                 <h2 className="display-5 fw-bold text-primary">Our Mission</h2>
                 <p className="text-white">
@@ -126,7 +134,7 @@ const Careers = () => {
                 <Col md={3}>
                   <img src={RobotImage1} width={223} alt="VoxBlox Games" title="VoxBlox Games" />
                 </Col>
-                <Col md={6}>
+                <Col md={6} className="my-sm-4">
                   <h2 className="text-primary">Be a player on the Track Games team</h2>
                   <p className="mb-0">
                     There are over 2.5 billion people in the world that play games. That means there are 2.5 billion
@@ -208,7 +216,7 @@ const Careers = () => {
           <Row>
             <Col md={6} sm={12} className="ps-0">
               <select className="form-select" aria-label="Default select example">
-                <option selected>Open this select menu</option>
+                <option defaultValue>Open this select menu</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
                 <option value="3">Three</option>

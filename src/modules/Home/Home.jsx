@@ -21,9 +21,9 @@ const Home = () => {
   return (
     <>
       <Container>
-        <Carousel>
+        <Carousel className="slider">
           <Carousel.Item>
-            <img className="d-block w-100" src={SliderImage} alt="First slide" />
+            <img className="d-block w-100 h-100" src={SliderImage} alt="First slide" />
             <Carousel.Caption className="mb-2">
               <h3>VoxBlox as that is their game</h3>
               <p>Buy the Voxels and unlock the adventure</p>
@@ -33,7 +33,7 @@ const Home = () => {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img className="d-block w-100" src={SliderImage} alt="Second slide" />
+            <img className="d-block w-100 h-100" src={SliderImage} alt="Second slide" />
 
             <Carousel.Caption className="mb-2">
               <h3>Second slide label</h3>
@@ -44,7 +44,7 @@ const Home = () => {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img className="d-block w-100" src={SliderImage} alt="Third slide" />
+            <img className="d-block w-100 h-100" src={SliderImage} alt="Third slide" />
 
             <Carousel.Caption className="mb-2">
               <h3>Third slide label</h3>
@@ -55,7 +55,7 @@ const Home = () => {
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
-        <section className="bg-secondary my-4 rounded align-items-center justify-content-center py-4 px-5">
+        <section className="bg-secondary center-smText my-4 rounded align-items-center justify-content-center py-4 px-5">
           <Row>
             <Col className="text-right" md={3} sm={2}>
               <IoLogoDiscord className="text-white hero-icon" />
@@ -111,27 +111,27 @@ const Home = () => {
           <Row>
             <Col>
               <div className="my-4">
-                <img src={MagicCard1} className="d-block" alt="magic card" />
+                <img src={MagicCard1} className="d-block mx-xs-auto" alt="magic card" />
               </div>
             </Col>
             <Col>
               <div className="my-4">
-                <img src={MagicCard2} className="d-block" alt="magic card" />
+                <img src={MagicCard2} className="d-block mx-xs-auto" alt="magic card" />
               </div>
             </Col>
             <Col>
               <div className="my-4">
-                <img src={MagicCard3} className="d-block" alt="magic card" />
+                <img src={MagicCard3} className="d-block mx-xs-auto" alt="magic card" />
               </div>
             </Col>
             <Col>
               <div className="my-4">
-                <img src={MagicCard4} className="d-block" alt="magic card" />
+                <img src={MagicCard4} className="d-block mx-xs-auto" alt="magic card" />
               </div>
             </Col>
             <Col>
               <div className="my-4">
-                <img src={MagicCard5} className="d-block" alt="magic card" />
+                <img src={MagicCard5} className="d-block mx-xs-auto" alt="magic card" />
               </div>
             </Col>
           </Row>
