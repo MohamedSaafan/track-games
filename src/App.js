@@ -6,6 +6,7 @@ import Careers from "./modules/Home/Careers";
 import GamesList from "./modules/Store/GamesList";
 import Nodes from "./modules/Home/Nodes";
 import About from "./shared/components/StaticContent/AboutUs";
+import Games from "./modules/Games/Games";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/store" element={<GamesList />} />
           <Route path="/nodes" element={<Nodes />} />
           <Route path="/about" element={<About />} />
+          <Route path="/games" element={<Games />} />
         </Routes>
         <Footer />
       </BrowserRouter>
