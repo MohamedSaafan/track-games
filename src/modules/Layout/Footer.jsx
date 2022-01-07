@@ -116,7 +116,7 @@ const Footer = () => {
       <div className="text-center p-3" style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}>
         © 2021
         <Link className="text-white ms-2" to="https://mdbootstrap.com/">
-          Gala Games • Terms and Conditions • Privacy Policy • Launcher EULA
+          Track Games • Terms and Conditions • Privacy Policy • Launcher EULA
         </Link>
       </div>
     </footer>
