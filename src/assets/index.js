@@ -38,6 +38,9 @@ import partnerImage3 from "./images/partner_3.png";
 import partnerImage4 from "./images/partner_4.png";
 import partnerImage5 from "./images/partner_5.png";
 import careersImage from "./images/careers-image.png";
+import getTrackImage from "./images/getTrack_banner.png";
+import iconExchange from "./images/icon_exchange.png";
+import iconGetnode from "./images/icon_getnode.png";
 
 export const MainLogo = mainLogo;
 export const SliderImage = sliderImage;
@@ -79,3 +82,6 @@ export const PartnerImage3 = partnerImage3;
 export const PartnerImage4 = partnerImage4;
 export const PartnerImage5 = partnerImage5;
 export const CareersImage = careersImage;
+export const GetTrackImage = getTrackImage;
+export const IconExchange = iconExchange;
+export const IconGetNode = iconGetnode;
