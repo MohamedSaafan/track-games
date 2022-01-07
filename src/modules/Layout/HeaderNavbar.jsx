@@ -27,7 +27,7 @@ const HeaderNavbar = () => {
             <NavLink to="/nodes" className="mx-2 text-secondary text-capitalize navbar-link praimaryText-hover">
               nodes
             </NavLink>
-            <NavLink to="/track" className="mx-2 text-secondary text-capitalize navbar-link praimaryText-hover">
+            <NavLink to="/get-track" className="mx-2 text-secondary text-capitalize navbar-link praimaryText-hover">
               get TRACK
             </NavLink>
             <NavLink to="/careers" className="mx-2 text-secondary text-capitalize praimaryText-hover">
