@@ -8,6 +8,15 @@
   font-family: "Open Sans", sans-serif;
 }
 
+.ethereum-icon {
+  color: #3c3c3d;
+  background-color: #ecf0f1;
+  padding: 0.1rem;
+  border-radius: 50%;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
 a {
   text-decoration: none;
 }
@@ -65,6 +74,13 @@ a {
   .navbar-buttons > a {
     margin: 0.4rem 0;
   }
+  .getTrack-card {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .getTrack-cardBody {
+    flex-direction: column !important;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -111,6 +127,17 @@ a {
 
 .search-button-icon > svg {
   font-size: 1.1rem;
+}
+
+.game-price-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-price {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-end;
 }
 
 /* Start Footer */
@@ -253,3 +280,33 @@ a {
     justify-content: center;
   }
 }
+
+/* Start GetTrak Page */
+.getTrack-hero {
+  background-image: linear-gradient(285deg, #1abc9c, #3498db);
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 3rem 0;
+  color: white;
+}
+
+.getTrack-banner {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.getTrack-card {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.getTrack-cardBody {
+  display: flex;
+  flex-direction: row;
+}
+
+/* End GetTrak Page */
