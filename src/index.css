@@ -17,6 +17,11 @@
   height: 1.4rem;
 }
 
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
 a {
   text-decoration: none;
 }
@@ -106,6 +111,13 @@ a {
 .hero-icon {
   width: 129px;
   height: 142px;
+}
+
+.magicCard-des {
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  color: #fff;
 }
 
 .games-hero {

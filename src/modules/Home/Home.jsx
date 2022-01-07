@@ -1,6 +1,7 @@
 import { Carousel, Container, Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { IoLogoDiscord } from "react-icons/io5";
+import { FaEthereum } from "react-icons/fa";
 import {
   HomeLaptop,
   MagicCard1,
@@ -109,29 +110,74 @@ const Home = () => {
             </Link>
           </div>
           <Row>
-            <Col>
+            <Col md={3} sm={6}>
               <div className="my-4">
-                <img src={MagicCard1} className="d-block mx-xs-auto" alt="magic card" />
+                <img src={MagicCard1} className="d-block mx-auto" alt="magic card" />
+                <div className="magicCard-des d-flex bg-secondary justify-content-between font-sm mt-1 rounded">
+                  <span className="text-muted font-sm">Price</span>
+                  <div className="game-price">
+                    <span className="d-flex align-items-center gap-2">
+                      <FaEthereum className="ethereum-icon" /> 333 ETH
+                    </span>
+                    <span className="text-muted">= $ 181,1917.90</span>
+                  </div>
+                </div>
               </div>
             </Col>
-            <Col>
-              <div className="my-4">
-                <img src={MagicCard2} className="d-block mx-xs-auto" alt="magic card" />
+            <Col md={3} sm={6}>
+              <div className="my-4 position-relative">
+                <img src={MagicCard2} className="d-block mx-auto" alt="magic card" />
+                <div className="magicCard-des d-flex bg-secondary justify-content-between font-sm mt-1 rounded">
+                  <span className="text-muted font-sm">Price</span>
+                  <div className="game-price">
+                    <span className="d-flex align-items-center gap-2">
+                      <FaEthereum className="ethereum-icon" /> 333 ETH
+                    </span>
+                    <span className="text-muted">= $ 181,1917.90</span>
+                  </div>
+                </div>
               </div>
             </Col>
-            <Col>
-              <div className="my-4">
-                <img src={MagicCard3} className="d-block mx-xs-auto" alt="magic card" />
+            <Col md={3} sm={6}>
+              <div className="my-4 position-relative">
+                <img src={MagicCard3} className="d-block mx-auto" alt="magic card" />
+                <div className="magicCard-des d-flex bg-secondary justify-content-between font-sm mt-1 rounded">
+                  <span className="text-muted font-sm">Price</span>
+                  <div className="game-price">
+                    <span className="d-flex align-items-center gap-2">
+                      <FaEthereum className="ethereum-icon" /> 333 ETH
+                    </span>
+                    <span className="text-muted">= $ 181,1917.90</span>
+                  </div>
+                </div>
               </div>
             </Col>
-            <Col>
-              <div className="my-4">
-                <img src={MagicCard4} className="d-block mx-xs-auto" alt="magic card" />
+            <Col md={3} sm={6}>
+              <div className="my-4 position-relative">
+                <img src={MagicCard4} className="d-block mx-auto" alt="magic card" />
+                <div className="magicCard-des d-flex bg-secondary justify-content-between font-sm mt-1 rounded">
+                  <span className="text-muted font-sm">Price</span>
+                  <div className="game-price">
+                    <span className="d-flex align-items-center gap-2">
+                      <FaEthereum className="ethereum-icon" /> 333 ETH
+                    </span>
+                    <span className="text-muted">= $ 181,1917.90</span>
+                  </div>
+                </div>
               </div>
             </Col>
-            <Col>
-              <div className="my-4">
-                <img src={MagicCard5} className="d-block mx-xs-auto" alt="magic card" />
+            <Col md={3} sm={6}>
+              <div className="my-4 position-relative">
+                <img src={MagicCard5} className="d-block mx-auto" alt="magic card" />
+                <div className="magicCard-des d-flex bg-secondary justify-content-between font-sm mt-1 rounded">
+                  <span className="text-muted font-sm">Price</span>
+                  <div className="game-price">
+                    <span className="d-flex align-items-center gap-2">
+                      <FaEthereum className="ethereum-icon" /> 333 ETH
+                    </span>
+                    <span className="text-muted">= $ 181,1917.90</span>
+                  </div>
+                </div>
               </div>
             </Col>
           </Row>
