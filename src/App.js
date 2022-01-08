@@ -7,6 +7,7 @@ import GamesList from "./modules/Store/GamesList";
 import Nodes from "./modules/Home/Nodes";
 import About from "./shared/components/StaticContent/AboutUs";
 import Games from "./modules/Games/Games";
+import GetTrack from "./modules/GetTrack/GetTrack";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/nodes" element={<Nodes />} />
           <Route path="/about" element={<About />} />
           <Route path="/games" element={<Games />} />
+          <Route path="/get-track" element={<GetTrack />} />
         </Routes>
         <Footer />
       </BrowserRouter>
