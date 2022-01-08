@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="bg-secondary text-white text-lg-start footer mt-4">
       <Container className="p-4">
         <div className="mb-4">
-          <img src={MainLogo} width={43} height={58} className="d-inline-block me-2" alt="Track Game" />
+          <img src={MainLogo} className="d-inline-block me-2 footer-logo" alt="Track Game" />
           <p className="text-uppercase d-inline-block">track</p>
         </div>
         <Row>

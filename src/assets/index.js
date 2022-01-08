@@ -41,6 +41,7 @@ import careersImage from "./images/careers-image.png";
 import getTrackImage from "./images/getTrack_banner.png";
 import iconExchange from "./images/icon_exchange.png";
 import iconGetnode from "./images/icon_getnode.png";
+import nodeCommunity from "./images/node_community.png";
 
 export const MainLogo = mainLogo;
 export const SliderImage = sliderImage;
@@ -85,3 +86,4 @@ export const CareersImage = careersImage;
 export const GetTrackImage = getTrackImage;
 export const IconExchange = iconExchange;
 export const IconGetNode = iconGetnode;
+export const NodeCommunity = nodeCommunity;

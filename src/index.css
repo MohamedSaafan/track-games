@@ -153,9 +153,11 @@ a {
 }
 
 /* Start Footer */
-.footer {
-  margin-top: auto;
+.footer-logo {
+  width: 43px;
+  height: 58px;
 }
+
 .footer-icon:hover {
   transform: scale(1.2);
 }
@@ -309,16 +311,13 @@ a {
   height: auto;
 }
 
-.getTrack-card {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  gap: 1rem;
-}
-
 .getTrack-cardBody {
   display: flex;
   flex-direction: row;
+}
+
+.track-icon {
+  width: 230px;
 }
 
 /* End GetTrak Page */
