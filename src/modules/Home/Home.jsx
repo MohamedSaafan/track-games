@@ -1,14 +1,12 @@
 import { Carousel, Container, Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { IoLogoDiscord } from "react-icons/io5";
-import { FaEthereum } from "react-icons/fa";
 import {
   HomeLaptop,
   MagicCard1,
   MagicCard2,
   MagicCard3,
   MagicCard4,
-  MagicCard5,
   RobotImage1,
   RobotImage2,
   RobotImage3,
@@ -111,74 +109,16 @@ const Home = () => {
           </div>
           <Row>
             <Col md={3} sm={6}>
-              <div className="my-4">
-                <img src={MagicCard1} className="d-block mx-auto" alt="magic card" />
-                <div className="magicCard-des d-flex bg-secondary justify-content-between font-sm mt-1 rounded">
-                  <span className="text-muted font-sm">Price</span>
-                  <div className="game-price">
-                    <span className="d-flex align-items-center gap-2">
-                      <FaEthereum className="ethereum-icon" /> 333 ETH
-                    </span>
-                    <span className="text-muted">= $ 181,1917.90</span>
-                  </div>
-                </div>
-              </div>
+              <GameCard cardImage={MagicCard1} cardTitle="Mr Sparx: Electritying" />
             </Col>
             <Col md={3} sm={6}>
-              <div className="my-4 position-relative">
-                <img src={MagicCard2} className="d-block mx-auto" alt="magic card" />
-                <div className="magicCard-des d-flex bg-secondary justify-content-between font-sm mt-1 rounded">
-                  <span className="text-muted font-sm">Price</span>
-                  <div className="game-price">
-                    <span className="d-flex align-items-center gap-2">
-                      <FaEthereum className="ethereum-icon" /> 333 ETH
-                    </span>
-                    <span className="text-muted">= $ 181,1917.90</span>
-                  </div>
-                </div>
-              </div>
+              <GameCard cardImage={MagicCard2} cardTitle="Mr Sparx: Electritying" />
             </Col>
             <Col md={3} sm={6}>
-              <div className="my-4 position-relative">
-                <img src={MagicCard3} className="d-block mx-auto" alt="magic card" />
-                <div className="magicCard-des d-flex bg-secondary justify-content-between font-sm mt-1 rounded">
-                  <span className="text-muted font-sm">Price</span>
-                  <div className="game-price">
-                    <span className="d-flex align-items-center gap-2">
-                      <FaEthereum className="ethereum-icon" /> 333 ETH
-                    </span>
-                    <span className="text-muted">= $ 181,1917.90</span>
-                  </div>
-                </div>
-              </div>
+              <GameCard cardImage={MagicCard3} cardTitle="Mr Sparx: Electritying" />
             </Col>
             <Col md={3} sm={6}>
-              <div className="my-4 position-relative">
-                <img src={MagicCard4} className="d-block mx-auto" alt="magic card" />
-                <div className="magicCard-des d-flex bg-secondary justify-content-between font-sm mt-1 rounded">
-                  <span className="text-muted font-sm">Price</span>
-                  <div className="game-price">
-                    <span className="d-flex align-items-center gap-2">
-                      <FaEthereum className="ethereum-icon" /> 333 ETH
-                    </span>
-                    <span className="text-muted">= $ 181,1917.90</span>
-                  </div>
-                </div>
-              </div>
-            </Col>
-            <Col md={3} sm={6}>
-              <div className="my-4 position-relative">
-                <img src={MagicCard5} className="d-block mx-auto" alt="magic card" />
-                <div className="magicCard-des d-flex bg-secondary justify-content-between font-sm mt-1 rounded">
-                  <span className="text-muted font-sm">Price</span>
-                  <div className="game-price">
-                    <span className="d-flex align-items-center gap-2">
-                      <FaEthereum className="ethereum-icon" /> 333 ETH
-                    </span>
-                    <span className="text-muted">= $ 181,1917.90</span>
-                  </div>
-                </div>
-              </div>
+              <GameCard cardImage={MagicCard4} cardTitle="Mr Sparx: Electritying" />
             </Col>
           </Row>
         </section>
@@ -192,16 +132,16 @@ const Home = () => {
           </div>
           <Row>
             <Col>
-              <GameCard cardImage={RobotImage1} cardTitle="Human Exemplar: The Pit Fighters" points={6104} />
+              <GameCard cardImage={RobotImage1} cardTitle="Human Exemplar: The Pit Fighters" />
             </Col>
             <Col>
-              <GameCard cardImage={RobotImage2} cardTitle="Human Exemplar: The Pit Fighters" points={6104} />
+              <GameCard cardImage={RobotImage2} cardTitle="Human Exemplar: The Pit Fighters" />
             </Col>
             <Col>
-              <GameCard cardImage={RobotImage3} cardTitle="Human Exemplar: The Pit Fighters" points={6104} />
+              <GameCard cardImage={RobotImage3} cardTitle="Human Exemplar: The Pit Fighters" />
             </Col>
             <Col>
-              <GameCard cardImage={RobotImage1} cardTitle="Human Exemplar: The Pit Fighters" points={6104} />
+              <GameCard cardImage={RobotImage1} cardTitle="Human Exemplar: The Pit Fighters" />
             </Col>
           </Row>
         </section>

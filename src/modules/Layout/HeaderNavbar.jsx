@@ -11,7 +11,7 @@ const HeaderNavbar = () => {
           <Link to="/">
             <img src={MainLogo} width={43} height={58} className="d-inline-block align-top" alt="Track Game" />
           </Link>
-          Track Game
+          Track Games
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse id="responsive-navbar">

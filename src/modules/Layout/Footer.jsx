@@ -1,6 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { MainLogo } from "../../assets";
 import { FaFacebookF, FaYoutube, FaDiscord } from "react-icons/fa";
 import { BsTwitter } from "react-icons/bs";
 import { BiHelpCircle, BiInfoCircle } from "react-icons/bi";
@@ -10,10 +9,6 @@ const Footer = () => {
   return (
     <footer className="bg-secondary text-white text-lg-start footer mt-4">
       <Container className="p-4">
-        <div className="mb-4">
-          <img src={MainLogo} className="d-inline-block me-2 footer-logo" alt="Track Game" />
-          <p className="text-uppercase d-inline-block">track</p>
-        </div>
         <Row>
           <Col>
             <h5 className="text-uppercase d-flex align-items-center mb-4">

@@ -1,10 +1,10 @@
 import { Card } from "react-bootstrap";
 import { FaEthereum } from "react-icons/fa";
 
-const GameCard = ({ cardImage, cardTitle, points }) => {
+const GameCard = ({ cardImage, cardTitle }) => {
   return (
     <Card>
-      <Card.Img variant="top" src={cardImage} />
+      <Card.Img variant="top" src={cardImage} height={350} style={{ objectFit: "contain" }} />
       <Card.Body>
         <Card.Title className="font-md">{cardTitle}</Card.Title>
         <div className="game-price-section font-sm mt-3">
@@ -16,6 +16,7 @@ const GameCard = ({ cardImage, cardTitle, points }) => {
             <span className="text-muted">= $ 181,1917.90</span>
           </div>
         </div>
+        <span className="text-muted font-sm">Game Name</span>
       </Card.Body>
     </Card>
   );
