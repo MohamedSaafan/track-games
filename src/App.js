@@ -8,6 +8,8 @@ import Nodes from "./modules/Home/Nodes";
 import About from "./shared/components/StaticContent/AboutUs";
 import Games from "./modules/Games/Games";
 import GetTrack from "./modules/GetTrack/GetTrack";
+import Launcher from "./shared/components/StaticContent/Launcher";
+import ContactSupport from "./modules/ContactUs/ContactSupport";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/games" element={<Games />} />
           <Route path="/get-track" element={<GetTrack />} />
+          <Route path="/contact-support" element={<ContactSupport />} />
+          <Route path="/launcher-eula" element={<Launcher />} />
         </Routes>
         <Footer />
       </BrowserRouter>
