@@ -7,10 +7,11 @@ const HeaderNavbar = () => {
   return (
     <Navbar collapseOnSelect expand="md" bg="white" className="px-4 mb-3">
       <Container fluid>
-        <Navbar.Brand>
+        <Navbar.Brand className="d-flex align-items-center gap-3">
           <Link to="/">
             <img src={MainLogo} width={43} height={58} className="d-inline-block align-top" alt="Track Game" />
           </Link>
+          Track Game
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse id="responsive-navbar">
