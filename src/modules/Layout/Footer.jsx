@@ -110,8 +110,15 @@ const Footer = () => {
 
       <div className="text-center p-3" style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}>
         © 2021
-        <Link className="text-white ms-2" to="https://mdbootstrap.com/">
-          Track Games • Terms and Conditions • Privacy Policy • Launcher EULA
+        <p className="text-white ms-2 d-inline-block">Track Games</p>
+        <Link className="text-white mx-2" to="/terms-and-conditions">
+          • Terms and Conditions
+        </Link>
+        <Link className="text-white mx-2" to="/privacy-policy">
+          • Privacy Policy
+        </Link>
+        <Link className="text-white mx-2" to="/launcher-eula">
+          • Launcher EULA
         </Link>
       </div>
     </footer>

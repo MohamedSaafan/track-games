@@ -10,6 +10,8 @@ import Games from "./modules/Games/Games";
 import GetTrack from "./modules/GetTrack/GetTrack";
 import Launcher from "./shared/components/StaticContent/Launcher";
 import ContactSupport from "./modules/ContactUs/ContactSupport";
+import PrivacyPolicy from "./shared/components/StaticContent/PrivacyPolicy";
+import TermsAndConditions from "./shared/components/StaticContent/TermsAndConditions";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
           <Route path="/get-track" element={<GetTrack />} />
           <Route path="/contact-support" element={<ContactSupport />} />
           <Route path="/launcher-eula" element={<Launcher />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         </Routes>
         <Footer />
       </BrowserRouter>
