@@ -524,8 +524,6 @@ const PrivacyPolicy = () => {
           which are set out in more detail below:
         </span>
       </p>
-      <a></a>
-      <a></a>
       <table>
         <tbody>
           <tr>
