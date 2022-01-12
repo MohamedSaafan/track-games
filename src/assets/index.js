@@ -42,6 +42,10 @@ import getTrackImage from "./images/getTrack_banner.png";
 import iconExchange from "./images/icon_exchange.png";
 import iconGetnode from "./images/icon_getnode.png";
 import nodeCommunity from "./images/node_community.png";
+import trackIcon from "./images/TRACK-icon.png";
+import batIcon from "./images/BAT-icon.png";
+import townIcon from "./images/TOWN-icon.png";
+import ethIcon from "./images/ETH-icon.png";
 
 export const MainLogo = mainLogo;
 export const SliderImage = sliderImage;
@@ -87,3 +91,7 @@ export const GetTrackImage = getTrackImage;
 export const IconExchange = iconExchange;
 export const IconGetNode = iconGetnode;
 export const NodeCommunity = nodeCommunity;
+export const TrackIcon = trackIcon;
+export const BatIcon = batIcon;
+export const TownIcon = townIcon;
+export const EthIcon = ethIcon;

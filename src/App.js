@@ -12,6 +12,7 @@ import Launcher from "./shared/components/StaticContent/Launcher";
 import ContactSupport from "./modules/ContactUs/ContactSupport";
 import PrivacyPolicy from "./shared/components/StaticContent/PrivacyPolicy";
 import TermsAndConditions from "./shared/components/StaticContent/TermsAndConditions";
+import Inventory from "./modules/Inventory/Inventory";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/games" element={<Games />} />
           <Route path="/get-track" element={<GetTrack />} />
+          <Route path="/inventory" element={<Inventory />} />
           <Route path="/contact-support" element={<ContactSupport />} />
           <Route path="/launcher-eula" element={<Launcher />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

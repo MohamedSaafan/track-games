@@ -70,39 +70,6 @@ a {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 767px) {
-  .navbar-buttons > a {
-    margin: 0.4rem 0;
-  }
-  .getTrack-card {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .getTrack-cardBody {
-    flex-direction: column !important;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .slider {
-    height: 350px;
-  }
-  .carousel-inner,
-  .carousel-item {
-    height: 100%;
-  }
-  .carousel-item > img {
-    object-fit: cover;
-  }
-  .center-smText {
-    text-align: center;
-  }
-  .mx-xs-auto {
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
 .hero-icon {
   width: 129px;
   height: 142px;
@@ -316,3 +283,48 @@ a {
 }
 
 /* End GetTrak Page */
+
+/* Start Inventory page */
+
+.inventory-img {
+  width: 150px;
+}
+
+/* End Inventory page */
+
+@media screen and (max-width: 767px) {
+  .navbar-buttons > a {
+    margin: 0.4rem 0;
+  }
+  .getTrack-card {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .getTrack-cardBody {
+    flex-direction: column !important;
+  }
+  .inventory-img {
+    width: 100%;
+    max-height: 250px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .slider {
+    height: 350px;
+  }
+  .carousel-inner,
+  .carousel-item {
+    height: 100%;
+  }
+  .carousel-item > img {
+    object-fit: cover;
+  }
+  .center-smText {
+    text-align: center;
+  }
+  .mx-xs-auto {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
