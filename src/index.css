@@ -282,6 +282,32 @@ a {
   width: 230px;
 }
 
+.exchange-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(255 255 255 / 12%);
+  padding: 1rem 1.5rem;
+}
+
+.exchange-card:last-child {
+  margin-bottom: 2rem;
+}
+
+.exchange-card > a {
+  min-width: 223px;
+  text-align: center;
+}
+
+.minCard-Content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  flex: 1;
+  gap: 2rem;
+}
+
 /* End GetTrak Page */
 
 /* Start Inventory page */
@@ -302,10 +328,20 @@ a {
   }
   .getTrack-cardBody {
     flex-direction: column !important;
+    text-align: center;
   }
   .inventory-img {
     width: 100%;
     max-height: 250px;
+  }
+  .exchange-card {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .getTrack-button {
+    margin: 0 auto;
+    display: block;
   }
 }
 
