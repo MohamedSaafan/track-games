@@ -318,6 +318,14 @@ a {
 
 /* End Inventory page */
 
+.settings-userimage {
+  max-width: 250px;
+}
+
+.settings-tab {
+  padding: 0 1rem;
+}
+
 @media screen and (max-width: 767px) {
   .navbar-buttons > a {
     margin: 0.4rem 0;
@@ -362,5 +370,9 @@ a {
   .mx-xs-auto {
     margin-right: auto;
     margin-left: auto;
+  }
+  .settings-tab {
+    padding: 0;
+    margin: 3rem 0;
   }
 }
