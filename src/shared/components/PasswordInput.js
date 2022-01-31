@@ -65,7 +65,7 @@ const PasswordInput = ({ placeholder, requirements }) => {
       currentPasswordRrequirements.hasSpace = true;
     }
 
-    if (/[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(currentPassword)) {
+    if (/[`!@#$%^&*()_+\-=[\]{};':"\\|,.<>\/?~]/.test(currentPassword)) {
       currentPasswordRrequirements.hasSymbol = true;
     } else {
       currentPasswordRrequirements.hasSymbol = false;
