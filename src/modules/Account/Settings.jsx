@@ -7,6 +7,7 @@ import PhoneNumber from "./SettingsComponents/PhoneNumber";
 import NodeInfo from "./SettingsComponents/NodeInfo";
 import Discord from "./SettingsComponents/Discord";
 import Notifications from "./SettingsComponents/Notifications";
+import { Link } from "react-router-dom";
 
 const Settings = () => {
   return (
@@ -43,45 +44,45 @@ const Settings = () => {
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link className="text-capitalize" role="button" eventKey="NodeInfo" disabled>
+                <Nav.Link className="text-capitalize" role="button" eventKey="NodeInfo">
                   Node Info
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link className="text-capitalize" role="button" eventKey="Discord" disabled>
+                <Nav.Link className="text-capitalize" role="button" eventKey="Discord">
                   Discord
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link className="text-capitalize" role="button" eventKey="Notifications" disabled>
+                <Nav.Link className="text-capitalize" role="button" eventKey="Notifications">
                   Notifications
                 </Nav.Link>
               </Nav.Item>
               <h5 className="text-muted px-3 mt-3 text-capitalize pb-2 border-bottom">security</h5>
               <Nav.Item>
-                <Nav.Link className="text-capitalize" role="button" eventKey="TwoFactor" disabled>
+                <Nav.Link className="text-capitalize" role="button" eventKey="TwoFactor">
                   Two-Factor Authentication
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link className="text-capitalize" role="button" eventKey="DeleteAccount" disabled>
+                <Nav.Link className="text-capitalize" role="button" eventKey="DeleteAccount">
                   Delete Account
                 </Nav.Link>
               </Nav.Item>
               <h5 className="text-muted px-3 mt-3 text-capitalize pb-2 border-bottom">support</h5>
               <Nav.Item>
-                <Nav.Link className="text-capitalize" role="button" eventKey="DeleteAccount" disabled>
-                  Submit a ticket
+                <Nav.Link className="text-capitalize" role="button" eventKey="SubmitTicket">
+                  <Link to="/contact-support">Submit a ticket</Link>
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link className="text-capitalize" role="button" eventKey="DeleteAccount" disabled>
-                  support center
-                </Nav.Link>
+                <a className="text-capitalize nav-link" href="https://support.track.games/" target="_self">
+                  Support Center
+                </a>
               </Nav.Item>
               <div className="border-bottom pb-2"></div>
               <Nav.Item>
-                <Nav.Link className="text-capitalize" role="button" eventKey="DeleteAccount" disabled>
+                <Nav.Link className="text-capitalize" role="button" eventKey="logout" disabled>
                   logout
                 </Nav.Link>
               </Nav.Item>

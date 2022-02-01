@@ -1,9 +1,9 @@
-import { Form } from "react-bootstrap";
+import React from "react";
 
-const Notifications = () => {
+const DeleteAccount = () => {
   return (
     <div className="settings-tab mx-3">
-      <h3 className="fw-bold mb-4 text-capitalize">Notifications</h3>
+      <h3 className="fw-bold mb-4 text-capitalize">Delete Account</h3>
       <div className="bg-secondary p-2 text-white rounded p-3">
         <p className="fw-bold">Nodes</p>
         <small>These options only apply to nodes running software version 2 or higher.</small>
@@ -20,4 +20,4 @@ const Notifications = () => {
   );
 };
 
-export default Notifications;
+export default DeleteAccount;
