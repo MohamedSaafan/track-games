@@ -318,6 +318,7 @@ a {
 
 /* End Inventory page */
 
+/* Start Settings page */
 .settings-userimage {
   max-width: 250px;
 }
@@ -326,10 +327,48 @@ a {
   padding: 0 1rem;
 }
 
+.step-header {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.step-indecator {
+  background-color: hsl(0deg 0% 50% / 53%);
+  color: white;
+  border-radius: 50%;
+  height: 24px;
+  min-width: 24px;
+  width: 24px;
+  display: block;
+  text-align: center;
+}
+
+.active-step .step-indecator {
+  background-color: var(--praimarycolor);
+}
+
+.step-title {
+  margin-bottom: 0;
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+.step-content {
+  margin-left: 12px;
+  padding: 16px 60px 16px 23px;
+}
+
+.step:not(:last-child) .step-content {
+  border-left: 1px #ddd solid;
+}
+
 .notifications-switch input {
   width: 3em !important;
   height: 1.5em;
 }
+
+/* End Settings page */
 
 @media screen and (max-width: 767px) {
   .navbar-buttons > a {

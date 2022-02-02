@@ -1,21 +1,21 @@
-import React from "react";
+import { Form, Button } from "react-bootstrap";
 
 const DeleteAccount = () => {
   return (
     <div className="settings-tab mx-3">
       <h3 className="fw-bold mb-4 text-capitalize">Delete Account</h3>
-      <div className="bg-secondary p-2 text-white rounded p-3">
-        <p className="fw-bold">Nodes</p>
-        <small>These options only apply to nodes running software version 2 or higher.</small>
-        <div className="d-flex justify-content-between align-items-center border-bottom border-top py-3 mt-1">
-          <div className="d-flex align-items-center">
-            Receive an email when the number of your nodes online decreases.
-          </div>
-          <Form>
-            <Form.Check type="switch" className="notifications-switch" checked />
-          </Form>
-        </div>
-      </div>
+      <p className="mt-5">
+        <span className="text-uppercase text-danger">caution:</span> This will permanently delete this account. You will
+        no longer be able to access your game progress through this application.
+      </p>
+      <Form className="my-4">
+        <Form.Group className="mb-3" controlId="formBasicCheckbox">
+          <Form.Check type="checkbox" label="I understand and wish to delete my account" />
+        </Form.Group>
+        <Button variant="danger" className="px-4 mt-2">
+          Delete Account
+        </Button>
+      </Form>
     </div>
   );
 };
