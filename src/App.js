@@ -14,6 +14,7 @@ import PrivacyPolicy from "./shared/components/StaticContent/PrivacyPolicy";
 import TermsAndConditions from "./shared/components/StaticContent/TermsAndConditions";
 import Inventory from "./modules/Inventory/Inventory";
 import Settings from "./modules/Account/Settings";
+import Notifications from "./modules/Account/Notifications";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="/account" element={<Settings />} />
+          <Route path="/notifications" element={<Notifications />} />
         </Routes>
         <Footer />
       </BrowserRouter>
