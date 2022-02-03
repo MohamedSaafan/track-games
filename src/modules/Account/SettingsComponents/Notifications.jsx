@@ -1,6 +1,9 @@
 import { Form } from "react-bootstrap";
+import { useState } from "react";
 
 const Notifications = () => {
+  const [allowNotifications, setAllowNotifications] = useState(false);
+
   return (
     <div className="settings-tab mx-3">
       <h3 className="fw-bold mb-4 text-capitalize">Notifications</h3>
@@ -12,7 +15,12 @@ const Notifications = () => {
             Receive an email when the number of your nodes online decreases.
           </div>
           <Form>
-            <Form.Check type="switch" className="notifications-switch" checked />
+            <Form.Check
+              type="switch"
+              className="notifications-switch"
+              onChange={() => setAllowNotifications(!allowNotifications)}
+              checked={allowNotifications}
+            />
           </Form>
         </div>
       </div>
