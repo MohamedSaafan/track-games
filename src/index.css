@@ -11,10 +11,26 @@
 .ethereum-icon {
   color: #3c3c3d;
   background-color: #ecf0f1;
-  padding: 0.1rem;
   border-radius: 50%;
+}
+
+.ethereum-icon-sm {
   width: 1.4rem;
   height: 1.4rem;
+  padding: 0.1rem;
+}
+
+.ethereum-icon-xl {
+  width: 4rem;
+  height: 4rem;
+  padding: 0.3rem;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 a {
@@ -115,6 +131,11 @@ a {
 }
 
 /* Start Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer-logo {
   width: 43px;
   height: 58px;
@@ -370,6 +391,40 @@ a {
 
 /* End Settings page */
 
+/* Start Notification page */
+
+.custom-tab {
+  border: none !important;
+}
+
+.custom-tab.active {
+  border-bottom: var(--praimarycolor) 2px solid !important;
+}
+
+.notification-card {
+  padding: 1rem;
+}
+
+.notification-card:first-child {
+  margin-top: 1rem;
+}
+
+.notification-iconImage {
+  margin-right: 1rem;
+  max-height: 70px;
+}
+
+.notification-info {
+  margin-left: auto;
+}
+
+.notification-info > p:first-child {
+  padding: 0 1.9rem;
+  background-color: #2b8aff;
+}
+
+/* End Notification page */
+
 @media screen and (max-width: 767px) {
   .navbar-buttons > a {
     margin: 0.4rem 0;
@@ -418,5 +473,23 @@ a {
   .settings-tab {
     padding: 0;
     margin: 3rem 0;
+  }
+  .notification-card {
+    flex-direction: column;
+  }
+  .notification-card > div {
+    margin: 0.6rem 0 0.6rem 0;
+  }
+  .notification-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .notification-content {
+    text-align: center;
+  }
+  .notification-content > p:nth-child(2) {
+    margin: 0.6rem 0 0.6rem 0;
   }
 }
