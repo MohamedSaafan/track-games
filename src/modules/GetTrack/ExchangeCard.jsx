@@ -2,7 +2,7 @@ import { Col } from "react-bootstrap";
 
 const ExchangeCard = ({ platformImg, name, slug }) => {
   return (
-    <Col md={12} className="exchange-card rounded mt-4">
+    <Col md={12} className="exchange-card rounded my-2">
       <img src={platformImg} alt={name} height={40} />
       <a href="/" className="border rounded text-white px-5 py-2">
         {slug}

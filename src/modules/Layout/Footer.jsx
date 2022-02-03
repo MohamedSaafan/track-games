@@ -7,7 +7,7 @@ import { RiHandCoinLine } from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary text-white text-lg-start footer mt-4">
+    <footer className="bg-secondary text-white text-lg-start footer mt-auto">
       <Container className="p-4">
         <Row>
           <Col>

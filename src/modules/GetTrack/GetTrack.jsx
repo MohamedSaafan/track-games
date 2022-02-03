@@ -33,7 +33,7 @@ const GetTrack = () => {
           </Row>
         </Container>
       </section>
-      <Container className="mt-5">
+      <Container className="my-5">
         <div className="justify-content-center">
           <h2 className="font-lg fw-bold mb-4">Two Ways to Get TRACK</h2>
 

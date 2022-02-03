@@ -65,8 +65,8 @@ const Games = () => {
         platform="Browser"
         gameLink="yes"
       />
-      <h2 className="my-5 border-bottom">Get a Track Node Today</h2>
-      <Row className="game-card bg-secondary rounded text-white py-4">
+      <h2 className="mt-5 mb-4 pb-2 border-bottom">Get a Track Node Today</h2>
+      <Row className="game-card bg-secondary rounded text-white py-4 mb-5">
         <Col className="game-thumbnail" md={6}>
           <img src={HomeLaptop} alt="Track token" className="d-block w-100" style={{ maxWidth: "450px" }} />
         </Col>
@@ -77,7 +77,7 @@ const Games = () => {
             contribution to the network. This can include Track, limited edition NFTs, and opportunities to help the
             Track Games ecosystem grow.
           </p>
-          <Link to="/buy" className="btn btn-primary btn-lg w-100 my-auto">
+          <Link to="/buy" className="btn btn-primary btn-lg w-100 my-auto text-white">
             Buy Now
           </Link>
         </Col>

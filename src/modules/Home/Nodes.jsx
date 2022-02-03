@@ -110,7 +110,7 @@ const Nodes = () => {
             view all
           </Link>
         </div>
-        <div className="bg-secondary text-white overflow-hidden">
+        <div className="bg-secondary text-white overflow-hidden rounded">
           <Row className="align-items-center justify-content-center text-center">
             <Col md={3}>
               <img src={Lego5} alt="VoxBlox Games" title="VoxBlox Games" />
@@ -121,7 +121,7 @@ const Nodes = () => {
                 Open up opportunities to receive rewards in TOWN, limited edition NFT's, and the chance to help the Town
                 Star ecosystem grow.
               </p>
-              <div className="d-flex mt-4 justify-content-center">
+              <div className="d-flex mt-4 justify-content-center py-3">
                 <Link to="/" className="btn btn-primary text-white rounded text-capitalize px-4 me-3">
                   get node
                 </Link>
