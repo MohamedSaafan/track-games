@@ -108,7 +108,7 @@ const Footer = () => {
         </Row>
       </Container>
 
-      <div className="text-center p-3" style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}>
+      <div className="text-center p-3 mt-auto" style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}>
         © 2021
         <p className="text-white ms-2 d-inline-block">Track Games</p>
         <Link className="text-white mx-2" to="/terms-and-conditions">

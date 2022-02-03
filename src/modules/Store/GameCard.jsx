@@ -11,7 +11,7 @@ const GameCard = ({ cardImage, cardTitle }) => {
           <span className="text-muted font-sm">Price</span>
           <div className="game-price">
             <span className="d-flex align-items-center gap-2">
-              <FaEthereum className="ethereum-icon" /> 333 ETH
+              <FaEthereum className="ethereum-icon ethereum-icon-sm" /> 333 ETH
             </span>
             <span className="text-muted">= $ 181,1917.90</span>
           </div>
