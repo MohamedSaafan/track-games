@@ -9,7 +9,7 @@ const TransferCode = () => {
           <Form.Control as="textarea" placeholder="Leave a comment here" style={{ height: "100px" }} />
         </FloatingLabel>
         <hr />
-        <Form.Group className="mb-3" controlId="changeUsername">
+        <Form.Group className="mb-3" controlId="transferCode">
           <Form.Control type="text" placeholder="New Transfer Code" className="py-3" />
         </Form.Group>
       </Form>
