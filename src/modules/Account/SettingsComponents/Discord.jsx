@@ -1,22 +1,29 @@
 import { useState } from "react";
 import { BiUnlink } from "react-icons/bi";
 import { Modal, Button } from "react-bootstrap";
+import { ConnectDiscord } from "../../../assets";
 
 const ConnectDiscordModal = (props) => {
   return (
     <Modal {...props} size="md" aria-labelledby="contained-modal-title-vcenter" centered>
-      <Modal.Header className="border-none" closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">Connect your Discord Account to Gala!</Modal.Title>
+      <Modal.Header className="border-0 d-flex justify-content-center align-items-start px-3" closeButton>
+        <Modal.Title id="contained-modal-title-vcenter" className="ms-auto text-center fw-bold">
+          <p className="mb-0">Connect your</p> Discord Account to Track!
+        </Modal.Title>
       </Modal.Header>
-      <Modal.Body>
-        <h4>Centered Modal</h4>
-        <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-          Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-        </p>
+      <Modal.Body className="text-center bg-secondary text-white">
+        <img
+          src={ConnectDiscord}
+          className="d-block mx-auto py-3"
+          alt="connect discord"
+          style={{ maxWidth: "200px" }}
+        />
+        <p>Connect your Discord account to get access to members-only channels and sneak-peeks!</p>
       </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
+      <Modal.Footer className="border-0 bg-secondary">
+        <Button className="w-100 text-white" variant="primary">
+          Connect Now
+        </Button>
       </Modal.Footer>
     </Modal>
   );

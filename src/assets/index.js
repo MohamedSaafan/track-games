@@ -52,6 +52,7 @@ import okexLogo from "./images/logo_okex.png";
 import kucoinLogo from "./images/logo_kucoin.png";
 import gateioLogo from "./images/logo_gateio.png";
 import uniswapLogo from "./images/logo_uniswap.png";
+import connectDiscord from "./images/connect_discord.png";
 
 export const MainLogo = mainLogo;
 export const SliderImage = sliderImage;
@@ -107,3 +108,4 @@ export const OkexLogo = okexLogo;
 export const KucoinLogo = kucoinLogo;
 export const GateioLogo = gateioLogo;
 export const UniswapLogo = uniswapLogo;
+export const ConnectDiscord = connectDiscord;
